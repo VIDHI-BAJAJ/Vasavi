@@ -371,7 +371,7 @@
 
         /* Tablet Styles */
         @media (max-width: 1024px) {
-            .container {
+            .main-container {
                 padding: 30px 15px;
             }
 
@@ -424,7 +424,7 @@
 
         /* Small Mobile Styles */
         @media (max-width: 480px) {
-            .container {
+            .main-container{
                 padding: 20px 10px;
             }
 
@@ -449,38 +449,6 @@
                 padding: 16px;
             }
         }
-
-        /* High DPI Displays */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            .hero-image {
-                image-rendering: -webkit-optimize-contrast;
-                image-rendering: crisp-edges;
-            }
-        }
-
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            }
-
-            .hero-section {
-                background: rgba(44, 62, 80, 0.95);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-            }
-
-            .content h1 {
-                background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-            }
-
-            .content p {
-                color: #bdc3c7;
-            }
-        }
-   
         /* End hero section */
 
          /* Marquee */
