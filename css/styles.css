@@ -574,253 +574,346 @@
  
         /* End Marquee */
 
-         /* Why Choose Us Section */ 
-         
-        .whychooseus{
-            padding: 30px 20px;
-            min-height: 100vh;
-        }
+      /* Why Choose Us Section */ 
+.whychooseus {
+    padding: 30px 20px;
+    min-height: 100vh;
+}
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            overflow: hidden;
-        }
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+}
 
-        .header {
-            padding: 60px 60px 40px;
-            background: white;
-            position: relative;
-        }
+.header {
+    padding: 60px 60px 40px;
+    background: white;
+    position: relative;
+}
 
+.why-choose {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 24px;
+    background-color: #D8CAB8;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    margin-top: -30px;
+}
 
-        .why-choose {
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-            color: #000;
-            margin-bottom: 24px;
-            background-color: #D8CAB8;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            font-weight: 500;
-            margin-top: -30px;
-        }
-
-        .why-choose::before {
-               content: '';
-         display: inline-block;
-    width: 16px;         /* Adjust size */
+.why-choose::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
     height: 16px;
     margin-right: 8px;
-    background-image: url('../images/Star.png'); /* Path to your image */
+    background-image: url('../images/Star.png');
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-        }
+}
 
-        .main-title {
-            font-size: 48px;
-            font-weight: 700;
-            color: #111827;
-            line-height: 1.1;
-            margin-bottom: 16px;
-            max-width: 600px;
-        }
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 600px;
+}
 
-        .subtitle {
-            font-size: 16px;
-            color: #6b7280;
-            max-width: 400px;
-            line-height: 1.5;
-            position: absolute;
-            top: 60px;
-            right: 60px;
-        }
+.subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 400px;
+    line-height: 1.5;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
 
-        .content-section {
-            padding: 0 60px 60px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-            align-items: stretch;
-        }
+.content-section {
+    padding: 0 60px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+}
 
-        .video-card {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            background: #f3f4f6;
-            height: 280px;
-        }
+.video-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f3f4f6;
+    height: 280px;
+}
 
-        .video-card video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-        .success-badge {
-            position: absolute;
-            bottom: 24px;
-            left: 24px;
-            background: white;
-            padding: 12px 16px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            font-size: 14px;
-            font-weight: 500;
-            color: #374151;
-        }
+.success-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
 
-        .success-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: #2EB521;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
+.success-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #2EB521;
+    border-radius: 50%;
+    margin-right: 8px;
+}
 
-        .network-card {
-            position: relative;
-           background-image: url('../images/factory.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 20px;
-            overflow: hidden;
-            height: 280px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.network-card {
+    position: relative;
+    background-image: url('../images/factory.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .network-visual {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('../images/factory.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+.network-visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/factory.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-        .trusted-badge {
-            position: absolute;
-            bottom: 24px;
-            right: 450px;
-            background: white;
-            padding: 12px 16px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 500;
-            color: black;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+.trusted-badge {
+    position: absolute;
+    bottom: 24px;
+    right: 450px;
+    background: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-        .trusted-badge::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: #2EB521;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
+.trusted-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #2EB521;
+    border-radius: 50%;
+    margin-right: 8px;
+}
 
-        @keyframes pulse {
-            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
-            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.5; }
-        }
+@keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.5; }
+}
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .header {
-                padding: 40px 40px 30px;
-            }
-            
-            .subtitle {
-                position: static;
-                margin-top: 16px;
-            }
-            
-            .content-section {
-                padding: 0 40px 40px;
-                gap: 24px;
-            }
-            
-            .main-title {
-                font-size: 40px;
-            }
-        }
+/* Responsive Design */
+@media (max-width: 1280px) {
+    .trusted-badge {
+        right: 350px;
+    }
+}
 
-        @media (max-width: 768px) {
-            
-            .header {
-                padding: 30px 30px 20px;
-            }
-            
-            .content-section {
-                grid-template-columns: 1fr;
-                padding: 0 30px 30px;
-                gap: 20px;
-            }
-            
-            .main-title {
-                font-size: 32px;
-            }
-            
-            .video-card,
-            .network-card {
-                height: 240px;
-            }
-        }
+@media (max-width: 1024px) {
+    .header {
+        padding: 40px 40px 30px;
+    }
+    
+    .subtitle {
+        position: static;
+        margin-top: 16px;
+        max-width: 100%;
+    }
+    
+    .content-section {
+        padding: 0 40px 40px;
+        gap: 24px;
+    }
+    
+    .main-title {
+        font-size: 40px;
+        max-width: 100%;
+    }
+    
+    .trusted-badge {
+        right: 300px;
+    }
+}
 
-        @media (max-width: 480px) {
-            .header {
-                padding: 24px 20px 16px;
-            }
-            
-            .content-section {
-                padding: 0 20px 24px;
-            }
-            
-            .main-title {
-                font-size: 28px;
-            }
-            
-            .subtitle {
-                font-size: 14px;
-            }
-            
-            .video-card,
-            .network-card {
-                height: 200px;
-            }
-            
-            .success-badge,
-            .trusted-badge {
-                font-size: 12px;
-                padding: 10px 14px;
-                bottom: 16px;
-            }
-            
-            .success-badge {
-                left: 16px;
-            }
-            
-            .trusted-badge {
-                right: 16px;
-            }
-        }
+@media (max-width: 900px) {
+    .trusted-badge {
+        right: 200px;
+    }
+}
 
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 30px 20px;
+    }
+    
+    .content-section {
+        grid-template-columns: 1fr;
+        padding: 0 30px 30px;
+        gap: 20px;
+    }
+    
+    .main-title {
+        font-size: 32px;
+    }
+    
+    .video-card,
+    .network-card {
+        height: 240px;
+    }
+    
+    .trusted-badge {
+        right: 24px;
+        bottom: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .whychooseus {
+        padding: 20px 15px;
+    }
+    
+    .header {
+        padding: 25px 25px 15px;
+    }
+    
+    .why-choose {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+    
+    .main-title {
+        font-size: 28px;
+    }
+    
+    .subtitle {
+        font-size: 15px;
+    }
+    
+    .content-section {
+        padding: 0 25px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 24px 20px 16px;
+    }
+    
+    .content-section {
+        padding: 0 20px 24px;
+    }
+    
+    .main-title {
+        font-size: 26px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .video-card,
+    .network-card {
+        height: 200px;
+    }
+    
+    .success-badge,
+    .trusted-badge {
+        font-size: 12px;
+        padding: 10px 14px;
+        bottom: 16px;
+    }
+    
+    .success-badge {
+        left: 16px;
+    }
+    
+    .trusted-badge {
+        right: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .why-choose {
+        font-size: 12px;
+    }
+    
+    .video-card,
+    .network-card {
+        height: 180px;
+    }
+}
+
+@media (max-width: 330px) {
+    .whychooseus {
+        padding: 15px 10px;
+    }
+    
+    .header {
+        padding: 20px 15px 12px;
+    }
+    
+    .main-title {
+        font-size: 22px;
+    }
+    
+    .subtitle {
+        font-size: 13px;
+    }
+    
+    .content-section {
+        padding: 0 15px 20px;
+    }
+    
+    .video-card,
+    .network-card {
+        height: 160px;
+    }
+    
+    .success-badge,
+    .trusted-badge {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
 /* End Why Choose Us Section */
 
 /* Our Services Section  */
