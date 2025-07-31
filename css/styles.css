@@ -705,9 +705,6 @@
         }
 
         @media (max-width: 768px) {
-            body {
-                padding: 20px 10px;
-            }
             
             .header {
                 padding: 30px 30px 20px;
