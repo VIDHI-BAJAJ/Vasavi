@@ -15,15 +15,24 @@
      position: absolute;
      top: 0;
      width: 100%;
-    padding: 25px 100px;
+     padding: 25px 100px;
      display: flex;
      justify-content: space-between;
      align-items: center;
      transition: background-color 0.3s ease;
-     z-index: 1000; 
+     /* background-image: url("../images/paper cups/banner.png");
+     min-height: 250px; */
+    }
+    .banner{
+        background-image: url("../images/paper cups/banner.png");
+        min-height: 300px;
+         width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
     }
 
-
+    
     .logo img{
       font-weight: bold;
       font-size: 20px;
@@ -238,8 +247,217 @@
             }
         }
      
-        /*End Navbar Styles */
+        .info{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #1A1A1A;
+        }
 
+        .info h3 {
+            margin-top: 70px;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .info h5 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+
+/* main style */
+
+        /* Main Content */
+          .our-product{
+             padding: 20px 60px 40px;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 30px 40px 40px;
+        
+        }
+
+        .headers{
+            padding: 60px 0px 0px;
+            position: relative;
+        }
+
+        .our-products {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 24px;
+            background-color: #D8CAB8;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 500;
+            margin-top: -30px;
+        }
+
+        .our-products::before {
+               content: '';
+         display: inline-block;
+    width: 16px;         /* Adjust size */
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('../images/Star.png'); /* Path to your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+        }
+   
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #3D5D74;
+        }
+
+        .title-dots {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .dot:nth-child(1) { background: #3498db; width: 10px; height: 10px; }
+        .dot:nth-child(2) { background: #e74c3c; width: 10px; height: 10px; }
+        .dot:nth-child(3) { background: #f39c12; width: 10px; height: 10px; }
+        .dot:nth-child(4) { background: #2ecc71; width: 10px; height: 10px; }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+
+        .description p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Product Gallery */
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #f8f8f8, #e8e8e8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Placeholder cup designs for the 6 images */
+        .product-image::before {
+            content: '';
+            width: 120px;
+            height: 120px;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: absolute;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .product-gallery {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .product-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 1rem 2%;
+            }
+
+            main {
+                padding: 1.5rem 2%;
+            }
+
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .product-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animation for loading */
+        .product-item {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .product-item:nth-child(1) { animation-delay: 0.1s; }
+        .product-item:nth-child(2) { animation-delay: 0.2s; }
+        .product-item:nth-child(3) { animation-delay: 0.3s; }
+        .product-item:nth-child(4) { animation-delay: 0.4s; }
+        .product-item:nth-child(5) { animation-delay: 0.5s; }
+        .product-item:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* end main style */
 
 
           /* Existing contactbutton styles */
